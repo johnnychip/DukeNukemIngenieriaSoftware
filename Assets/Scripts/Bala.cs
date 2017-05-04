@@ -9,10 +9,13 @@ public class Bala : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other)
+	void OnCollisionEnter(Collision other)
 	{
+		
 
-		if (other.gameObject.tag == "enemigo") {
+		if (other.gameObject.tag == "enemy") {
+
+			GameManager.Instance.NotifyHit ();
 
 			Destroy (other.gameObject);
 			Destroy (gameObject);

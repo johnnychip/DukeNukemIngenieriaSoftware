@@ -29,9 +29,8 @@ public class Disparar : MonoBehaviour {
 		if (balas <= 0)
 			return;
 		GameObject tempBala = Instantiate (prefBala, spawnTrans.position, spawnTrans.rotation);
-		tempBala.GetComponent<Rigidbody> ().velocity = Vector3.forward*bulletSpeed;
+		tempBala.GetComponent<Rigidbody> ().AddRelativeForce (Vector3.forward * bulletSpeed, ForceMode.Impulse);
 		balas--;
-
 	}
 
 	public int Balas {

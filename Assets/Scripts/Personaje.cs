@@ -11,9 +11,9 @@ public class Personaje : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider other)
+	void OnCollisionEnter(Collision other)
 	{
-
+		Debug.Log ("Happend");
 		if (other.gameObject.tag == "ammo") {
 		
 			miDisparar.Balas += 5;

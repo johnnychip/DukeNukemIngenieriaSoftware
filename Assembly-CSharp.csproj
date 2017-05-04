@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\Disparar.cs" />
      <Compile Include="Assets\Scripts\Enemigo.cs" />
      <Compile Include="Assets\Scripts\EnemigoDron.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GeneradorEnemigos.cs" />
      <Compile Include="Assets\Scripts\Personaje.cs" />
      <None Include="Assets\Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
